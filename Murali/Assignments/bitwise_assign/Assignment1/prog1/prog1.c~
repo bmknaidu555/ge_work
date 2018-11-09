@@ -1,0 +1,62 @@
+/**
+*	
+*
+*
+*
+*
+**/
+
+
+
+
+int prog1()
+{
+	//Integer variable to store before swapped value	
+	int bfr_swap;  
+		
+	//source variable to store source value given by user
+	int src;
+
+	//destination variable to store desination value given by user
+	int dest;
+
+	//This variable is used to store value after swapping
+	int aftr_swap;
+
+	//Reading input from user
+	printf("Enter the value to swap selected bits in it : \n");
+	scanf("%d",&bfr_swap);
+	
+	printf("Binary of the value of you entered is : \n");
+	dec2bin(bfr_swap);	
+
+	// Reading source value input from user
+	printf("\nEnter source bit value  : (Note : Indexing starts from 0) \n");
+	scanf("%d", &src);
+
+	//Reading destination value from user
+	printf("Enter Destination bit value  :  ");
+	scanf("%d", &dest);
+
+
+	//validation 1 :
+
+	if(dest <= src)
+	{
+			printf("Check your Input. Source Value should always need to be less than Destination");
+			return 0;
+	}
+	
+	/*
+		Calling a faunction by providing source and destination values as  a parameters to get the value after swapping the bits
+	*/
+
+	aftr_swap = bit_swap(bfr_swap, src, dest);
+
+	printf("After swapping source and destination bits the value is :  %d\n\n", aftr_swap); 
+
+	printf("The binary value after swapping is : \n");
+	dec2bin(aftr_swap);
+	printf("\n");
+
+} 

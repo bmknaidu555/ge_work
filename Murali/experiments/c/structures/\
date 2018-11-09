@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+
+
+int main()
+{
+	int a = "0x45643456";
+	char *pointer;
+	pointer = &a;
+	
+	printf("%d\n ",*pointer);
+	pointer++;
+//	printf("%p\n", pointer);
+
+	printf("%x",*pointer);
+}

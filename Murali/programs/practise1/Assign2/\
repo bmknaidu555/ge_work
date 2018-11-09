@@ -1,0 +1,23 @@
+
+
+/* Function to copy string from one string variable to another variable */
+
+int strcpy(char* dbuf, char* sbuf)
+{
+     int size = f_strlen(sbuf);
+	 int i;
+	 void* temp;
+	 temp = dbuf;
+	// Allocating memory to destination buffer or destination variable.
+	dbuf = malloc( sizeof(char) * size );
+	
+	for( i = 0; i < size; i++ )
+	{
+		dbuf = sbuf;
+		printf("%c",*dbuf);
+		dbuf++;
+		sbuf++;
+	}
+ 	dbuf = temp;
+	printf("%s",dbuf);
+}

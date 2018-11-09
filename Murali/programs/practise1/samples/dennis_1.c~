@@ -1,0 +1,59 @@
+/**
+*	dennis_1.c
+
+*	AUTHOR	 				:		Murali krishna.
+
+*	Date of creation 		:		19/9/2018.
+
+*	purpose					:	    By this program we can calculate the sizes of 									 of different datatpes. 
+*	Working procedure		:		By using operator called "sizeOf()" we are   									 calculating the size of different DataTypes.
+*	Last Modified Data		:		No
+
+--------------------------------------------------------------------------------
+**/
+
+#include<stdio.h>
+#include<limits.h>
+#include<float.h>
+
+//Stdio.h contains predefined set of codes like print and scanf.
+
+long find_size(long, long); 
+
+int main()
+{
+	printf("Plain char will occupy %d bits and its range is from %d to %d\n",
+											CHAR_BIT, CHAR_MIN, CHAR_MAX);
+
+	printf("signed char can hold %d bits and its range is from %d to %d\n",
+											CHAR_BIT, SCHAR_MIN, SCHAR_MAX);
+	
+	printf("UN Signed char can hold %d bits and its range is from 0 to %d\n",
+											            CHAR_BIT, UCHAR_MAX);
+
+	printf("Normal integer can hold %ld bits and its range is from %d to %d\n",                                 find_size(INT_MIN, INT_MAX),INT_MIN,INT_MAX);
+												           
+}
+
+long find_size(long start, long end)
+{
+	long long i = 1;
+	long long max;
+	int count=1;
+
+	if(start < 0)
+		max = -(start) + end;	
+	else
+		max = end;
+
+	while(i<=end){
+		i = i * 2;	
+        count++;
+	}
+
+	return count;
+
+}
+
+
+
