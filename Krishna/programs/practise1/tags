@@ -1,0 +1,108 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+-std	Assignments/Assignment1/makefile	/^	gcc --std=c11 -Wall -o root main.o dec2bin.o switch_choice.o prog1.o bit_swap.o prog2.o bit_swap_diff.o prog3.o bit_copy.o prog4.o even_bit_toggle.o odd_bit_toggle.o prog5.o prog6.o left_rotate_bits.o left_rotate_n_bits.o right_rotate_bits.o right_rotate_n_bits.o prog7.o count_bit_set.o count_bit_clear.o prog8.o cnt_leading_cleared_bits.o cnt_leading_set_bits.o cnt_trailing_cleared_bits.o cnt_trailing_set_bits.o$/;"	m
+BUFFER	Assign2/ass1.c	5;"	d	file:
+BUFFER	Assign2/ass10.c	6;"	d	file:
+BUFFER	Assign2/ass2.c	5;"	d	file:
+BUFFER	Assign2/ass3.c	6;"	d	file:
+BUFFER	Assign2/ass4.c	6;"	d	file:
+BUFFER	Assign2/ass5.c	6;"	d	file:
+BUFFER	Assign2/ass6.c	6;"	d	file:
+BUFFER	Assign2/ass7.c	6;"	d	file:
+BUFFER	Assign2/ass8.c	6;"	d	file:
+BUFFER	Assign2/ass9.c	6;"	d	file:
+BUFFER	Assign2/lib/f_atoi.c	4;"	d	file:
+MAX	Assignments/Assignment1/prog9/9a.c	2;"	d	file:
+MAX	Assignments/Assignment1/prog9/9b.c	2;"	d	file:
+MAX	Assignments/Assignment1/prog9/9c.c	2;"	d	file:
+MAX	Assignments/Assignment1/prog9/9d.c	2;"	d	file:
+MAX	Assignments/Assignment1/prog9/9e.c	2;"	d	file:
+MAX	Assignments/Assignment1/prog9/9f.c	2;"	d	file:
+MAX	Assignments/Assignment1/prog9/9g.c	2;"	d	file:
+MAX	Assignments/Assignment1/prog9/9h.c	2;"	d	file:
+ato_i	Assign2/lib/f_atoi.c	/^int ato_i(char *a)$/;"	f
+bit_copy	Assignments/Assignment1/prog3/bit_copy.c	/^int bit_copy(snum, dnum, src, dest, n)$/;"	f
+bit_swap	Assignments/Assignment1/prog1/bit_swap.c	/^int bit_swap (int value, int source, int destination)$/;"	f
+bit_ts	Assignments/Assignment1/prog5/prog5.c	2;"	d	file:
+cnt_leading_cleared_bits	Assignments/Assignment1/prog8/cnt_leading_cleared_bits.c	/^int cnt_leading_cleared_bits(int number)$/;"	f
+cnt_leading_set_bits	Assignments/Assignment1/prog8/cnt_leading_set_bits.c	/^int cnt_leading_set_bits(int number)$/;"	f
+cnt_trailing_cleared_bits	Assignments/Assignment1/prog8/cnt_trailing_cleared_bits.c	/^int cnt_trailing_cleared_bits(unsigned int number)$/;"	f
+cnt_trailing_set_bits	Assignments/Assignment1/prog8/cnt_trailing_set_bits.c	/^int cnt_trailing_set_bits(int number)$/;"	f
+count_bit_clear	Assignments/Assignment1/prog7/count_bit_set.c	/^int count_bit_clear(unsigned int number)$/;"	f
+count_bit_set	Assignments/Assignment1/prog7/count_bit_clear.c	/^int count_bit_set(unsigned int number)$/;"	f
+dec2bin	Assignments/Assignment1/common/dec2bin.c	/^int dec2bin(int value)$/;"	f
+dec2bin	Assignments/lib/dec2bin.c	/^int dec2bin(int value)$/;"	f
+dec2bin_n	Assignments/lib/dec2bin_n.c	/^int dec2bin_n(int value, int n)$/;"	f
+even_bit_toggle	Assignments/Assignment1/prog4/even_bit_toggle.c	/^int even_bit_toggle(unsigned int value)$/;"	f
+f_chr_add_instr	Assign2/lib/f_chr_add_instr.c	/^char* f_chr_add_instr (char *buf, char ch)$/;"	f
+f_invert_bits	Assignments/Assignment1/prog11/invert.c	/^int f_invert_bits(int x, int p, int n)$/;"	f
+f_setbits	Assignments/Assignment1/prog10/setbits.c	/^int f_setbits(int x, int y, int n, int p )$/;"	f
+f_strlen	Assign2/lib/f_strlen.c	/^int f_strlen(char* str)$/;"	f
+f_strncpy	Assign2/lib/f_strncpy.c	/^void f_strncpy(char* dbuf, char* sbuf, int n)$/;"	f
+find_range	samples/dennis_2.c	/^long long find_range(int range)$/;"	f
+getChoice	Assignments/Assignment1/common/switch_choice.c	/^int getChoice()$/;"	f
+get_bits	Assignments/Assignment1/prog12/prog12.c	5;"	d	file:
+get_bits	Assignments/get_bits_left_adj/get_bits_left_adj.c	3;"	d	file:
+leftrotate	Assignments/Assignment1/prog6/left_rotate_bits.c	/^int leftrotate(unsigned int number)$/;"	f
+leftrotate_n	Assignments/Assignment1/prog6/left_rotate_n_bits.c	/^int leftrotate_n(unsigned int number, int count)$/;"	f
+main	Assign2/ass1.c	/^int main()$/;"	f
+main	Assign2/ass10.c	/^int main()$/;"	f
+main	Assign2/ass2.c	/^int main()$/;"	f
+main	Assign2/ass3.c	/^int main()$/;"	f
+main	Assign2/ass4.c	/^int main()$/;"	f
+main	Assign2/ass5.c	/^int main()$/;"	f
+main	Assign2/ass6.c	/^int main()$/;"	f
+main	Assign2/ass7.c	/^int main()$/;"	f
+main	Assign2/ass8.c	/^int main()$/;"	f
+main	Assign2/ass9.c	/^int main()$/;"	f
+main	Assign2/lib/f_atoi.c	/^int main()$/;"	f
+main	Assignments/Assignment1/main.c	/^int main ()$/;"	f
+main	Assignments/Assignment1/prog10/prog10.c	/^int main()$/;"	f
+main	Assignments/Assignment1/prog11/prog11.c	/^int main()$/;"	f
+main	Assignments/Assignment1/prog12/prog12.c	/^int main()$/;"	f
+main	Assignments/Assignment1/prog9/9a.c	/^int main()$/;"	f
+main	Assignments/Assignment1/prog9/9b.c	/^int main()$/;"	f
+main	Assignments/Assignment1/prog9/9c.c	/^int main()$/;"	f
+main	Assignments/Assignment1/prog9/9d.c	/^int main()$/;"	f
+main	Assignments/Assignment1/prog9/9e.c	/^int main()$/;"	f
+main	Assignments/Assignment1/prog9/9f.c	/^int main()$/;"	f
+main	Assignments/Assignment1/prog9/9g.c	/^int main()$/;"	f
+main	Assignments/Assignment1/prog9/9h.c	/^int main()$/;"	f
+main	Assignments/Experiments/experiment.c	/^int main()$/;"	f
+main	Assignments/get_bits_left_adj/get_bits_left_adj.c	/^int main()$/;"	f
+main	experiments/pointer_experiment.c	/^int main()$/;"	f
+main	experiments/sample.c	/^int main()$/;"	f
+main	samples/dennis.c	/^int main()$/;"	f
+main	samples/dennis3_1.c	/^int main()$/;"	f
+main	samples/dennis_1.c	/^int main(){$/;"	f
+main	samples/dennis_2.c	/^int main()$/;"	f
+main	samples/longdouble.c	/^int main()$/;"	f
+main	samples/sample1.c	/^int main()$/;"	f
+main	samples/sample_01.c	/^int main ()$/;"	f
+main	samples/sapmle2.c	/^int main()$/;"	f
+main	samples/temp_001.c	/^int main ()$/;"	f
+new	Assignments/Assignment1/common/switch_choice.c	2;"	d	file:
+new	Assignments/Assignment1/main.c	2;"	d	file:
+odd_bit_toggle	Assignments/Assignment1/prog4/odd_bit_toggle.c	/^int odd_bit_toggle(unsigned int value)$/;"	f
+p1	experiments/pointer_experiment.c	/^int *p1, data(char *);$/;"	v
+prog1	Assignments/Assignment1/prog1/prog1.c	/^int prog1()$/;"	f
+prog2	Assignments/Assignment1/prog2/prog2.c	/^int prog2(void)$/;"	f
+prog3	Assignments/Assignment1/prog3/prog3.c	/^int prog3()$/;"	f
+prog4	Assignments/Assignment1/prog4/prog4.c	/^int prog4()$/;"	f
+prog5	Assignments/Assignment1/prog5/prog5.c	/^int prog5()$/;"	f
+prog6	Assignments/Assignment1/prog6/prog6.c	/^int prog6()$/;"	f
+prog7	Assignments/Assignment1/prog7/prog7.c	/^int prog7()$/;"	f
+prog8	Assignments/Assignment1/prog8/prog8.c	/^int prog8()$/;"	f
+rightrotate	Assignments/Assignment1/prog6/right_rotate_bits.c	/^int rightrotate(unsigned int number)$/;"	f
+rightrotate_n	Assignments/Assignment1/prog6/right_rotate_n_bits.c	/^int rightrotate_n(unsigned int number, int count)$/;"	f
+sappend	Assign2/lib/f_sappend.c	/^char* sappend(char* str1, char* str2)$/;"	f
+search	samples/dennis3_1.c	/^int search(int key, int low, int high, int list[])$/;"	f
+snappend	Assign2/lib/snappend.c	/^char* snappend(char* str1, char* str2, int n)$/;"	f
+strcmp	Assign2/lib/strcmp.c	/^char* strcmp(char* str1, char* str2)$/;"	f
+strcpy	Assign2/lib/f_strcpy.c	/^void strcpy(char* dbuf, char* sbuf)$/;"	f
+sum	samples/sample_01.c	/^void sum(int a, int b)$/;"	f
+swap	Assignments/Assignment1/prog2/bit_swap_diff.c	/^int swap(int *src_num, int *dest_num, int src, int dest)$/;"	f

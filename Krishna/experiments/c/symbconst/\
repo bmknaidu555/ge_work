@@ -1,0 +1,8 @@
+#include <stdio.h>
+#define 12m334 3444
+
+int main ()
+{
+	printf("%d",12m334);
+		
+}

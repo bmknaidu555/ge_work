@@ -1,0 +1,50 @@
+#include "HEADER/header.h"
+
+void flread(char **__buffer, unsigned long line_no, FILE *_fp)
+{
+	char data[100];
+	unsigned long size;
+	unsigned long counter = 0; 
+	unsigned long count = 0;
+	unsigned int i = 0;
+	fseek(_fp, 0, SEEK_SET);
+
+	while((size = fread(data, 1, 100, _fp)) > 0)
+	{
+			
+
+		// made a loop from i = 0 -> entire size(i.e how many charcters read by fread )
+
+		for(i = 0; (i < size) && (count < line_no) ; i++)
+		{
+
+			/*  if any character equals to '\n' it indicates that end of the filename */
+
+			if(data[i] == '\n'){
+				count++;
+			/*	if data[i] == '\n' then skip to next character position    */
+				continue;
+				
+			}
+			
+			
+			if(count == (line_no-1))
+			{
+				__buffer[line_no - 1][counter] = data[i];
+				counter++;
+			}
+
+		}
+
+	}
+
+
+	__buffer[line_no-1][counter] = '\0';
+
+	
+		//printf("%s", __buffer[line_no - 1]);
+	// function returns the counter as (i.e length(filename)) + 1 
+	// +1 is for NULL character '\0' 
+
+	
+}
