@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "packet.h"
-#include <stdargs.h>
+#include <stdarg.h>
 /* Buffer to store the user input */
 #define BUFFER_SIZE 200
 /* Maximum size of method name */ 
@@ -16,6 +16,25 @@
 
 /* API to initate a call */
 int initiate_call(void);
+
+int init_packet (PACKET **packet);
+
+int init_startline (PACKET *packet, int (*fun_ptr)(STRTLINE *startline_ref));
+int request_line (STRTLINE *startline_ref);
+int response_line (STRTLINE *startline_ref);
+
+int init_message_hddr (PACKET *packet, unsigned int count, ...);
+int accept (MSGHDR *messageheader_ref);
+int call_id (MSGHDR *messageheader_ref);
+int contact (MSGHDR *messageheader_ref);
+int content_length (MSGHDR *messageheader_ref);
+int content_type (MSGHDR *messageheader_ref);
+int cseq (MSGHDR *messageheader_ref);
+int from(MSGHDR *messageheader_ref);
+int max_forward(MSGHDR *messageheader_ref);
+int to(MSGHDR *messageheader_ref);
+int user_agent(MSGHDR *messageheader_ref);
+int via(MSGHDR *messageheader_ref);
 
 /* API to allocate memory */
 /* The below API use */

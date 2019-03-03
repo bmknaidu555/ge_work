@@ -1,0 +1,134 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ADDRSPEC	packet.h	/^} ADDRSPEC;$/;"	t	typeref:struct:addrspec_struct
+BUFFER_SIZE	header.h	6;"	d
+CALLID	packet.h	/^}CALLID;$/;"	t	typeref:struct:callid_struct
+CONTACT	packet.h	/^} CONTACT;$/;"	t	typeref:struct:contact_struct
+CONTACTPARAM	packet.h	/^} CONTACTPARAM;$/;"	t	typeref:struct:contactparam_struct
+CONTACTPARAMS	packet.h	/^}CONTACTPARAMS;$/;"	t	typeref:struct:contactparams_struct
+CSEQ	packet.h	/^}CSEQ;$/;"	t	typeref:struct:cseq_struct
+FROM	packet.h	/^}FROM;$/;"	t	typeref:struct:from_struct
+FROMPARAMS	packet.h	/^}FROMPARAMS;$/;"	t	typeref:struct:fromparams_struct
+HOST_INFO_SIZE	header.h	12;"	d
+MAX_METHOD_SIZE	header.h	8;"	d
+MSGHDR	packet.h	/^}MSGHDR;$/;"	t	typeref:struct:messageheader_struct
+NAMEADDR	packet.h	/^} NAMEADDR;$/;"	t	typeref:struct:nameaddr_struct
+PACKET	packet.h	/^} PACKET;$/;"	t	typeref:struct:packet_struct
+REQLINE	packet.h	/^} REQLINE;$/;"	t	typeref:struct:requestline_struct
+REQURI	packet.h	/^} REQURI;$/;"	t	typeref:union:requesturi_union
+SENTBY	packet.h	/^}SENTBY;$/;"	t	typeref:struct:sentby_struct
+SENTPROTOCOL	packet.h	/^}SENTPROTOCOL;$/;"	t	typeref:struct:sentprotocol_struct
+SIPSURI	packet.h	/^}SIPSURI;$/;"	t	typeref:struct:sipsuri_struct
+SIPURI	packet.h	/^} SIPURI;$/;"	t	typeref:struct:sipuri_struct
+SIP_VERSION_SIZE	header.h	9;"	d
+STRTLINE	packet.h	/^} STRTLINE;$/;"	t	typeref:union:startline_union
+TO	packet.h	/^}TO;$/;"	t	typeref:struct:to_struct
+TOPARAMS	packet.h	/^}TOPARAMS;$/;"	t	typeref:struct:toparams_struct
+URI_PARAM_SIZE	header.h	15;"	d
+USER_INFO_SIZE	header.h	11;"	d
+VIA	packet.h	/^}VIA;$/;"	t	typeref:struct:via_struct
+VIAPARAM	packet.h	/^}VIAPARAM;$/;"	t	typeref:struct:viaparam_struct
+VIAPARAMS	packet.h	/^}VIAPARAMS;$/;"	t	typeref:struct:viaparams_struct
+accept	h_fields.c	/^int accept( MSGHDR *messageheader_ref)$/;"	f
+addr_spec	packet.h	/^	struct addrspec_struct *addr_spec;$/;"	m	struct:nameaddr_struct	typeref:struct:nameaddr_struct::addrspec_struct
+addrspec_struct	packet.h	/^typedef struct addrspec_struct {$/;"	s
+alloc_memory	alloc_memory.c	/^void* alloc_memory(size_t size)$/;"	f
+branch	packet.h	/^	char *branch;$/;"	m	struct:viaparams_struct
+call_id	h_fields.c	/^int call_id(MSGHDR *messageheader_ref)$/;"	f
+call_id	packet.h	/^	struct callid_struct *call_id;$/;"	m	struct:messageheader_struct	typeref:struct:messageheader_struct::callid_struct
+callid	packet.h	/^	char *callid;$/;"	m	struct:callid_struct
+callid_struct	packet.h	/^typedef struct callid_struct {$/;"	s
+cont_param	packet.h	/^	struct contactparam_struct *cont_param;$/;"	m	struct:contact_struct	typeref:struct:contact_struct::contactparam_struct
+cont_params	packet.h	/^	struct contactparams_struct *cont_params;$/;"	m	struct:contactparam_struct	typeref:struct:contactparam_struct::contactparams_struct
+contact	h_fields.c	/^int contact(MSGHDR *messageheader_ref)$/;"	f
+contact	packet.h	/^	struct contact_struct *contact;$/;"	m	struct:messageheader_struct	typeref:struct:messageheader_struct::contact_struct
+contact_struct	packet.h	/^typedef struct contact_struct {$/;"	s
+contactparam_struct	packet.h	/^typedef struct contactparam_struct {$/;"	s
+contactparams_struct	packet.h	/^typedef struct contactparams_struct {$/;"	s
+content_length	h_fields.c	/^int content_length(MSGHDR *messageheader_ref)$/;"	f
+content_length	packet.h	/^	char *content_length;$/;"	m	struct:messageheader_struct
+content_type	h_fields.c	/^int content_type(MSGHDR *messageheader_ref)$/;"	f
+content_type	packet.h	/^	char *content_type;$/;"	m	struct:messageheader_struct
+cseq	h_fields.c	/^int cseq(MSGHDR *messageheader_ref)$/;"	f
+cseq	packet.h	/^	struct cseq_struct *cseq;$/;"	m	struct:messageheader_struct	typeref:struct:messageheader_struct::cseq_struct
+cseq_no	packet.h	/^	char *cseq_no;$/;"	m	struct:cseq_struct
+cseq_struct	packet.h	/^typedef struct cseq_struct {$/;"	s
+display_name	packet.h	/^	char *display_name;$/;"	m	struct:nameaddr_struct
+dumplog	log.c	/^void dumplog(const char* message, const char *fun_name, $/;"	f
+expires	packet.h	/^	char *expires;$/;"	m	struct:contactparams_struct
+from	h_fields.c	/^int from(MSGHDR *messageheader_ref)$/;"	f
+from	packet.h	/^	struct from_struct *from;$/;"	m	struct:messageheader_struct	typeref:struct:messageheader_struct::from_struct
+from_params	packet.h	/^	struct fromparams_struct *from_params;$/;"	m	struct:from_struct	typeref:struct:from_struct::fromparams_struct
+from_struct	packet.h	/^typedef struct from_struct {$/;"	s
+fromparams_struct	packet.h	/^typedef struct fromparams_struct {$/;"	s
+host	packet.h	/^	char *host;$/;"	m	struct:callid_struct
+host	packet.h	/^	char *host;$/;"	m	struct:sentby_struct
+host_part	packet.h	/^	char *host_part;$/;"	m	struct:addrspec_struct
+host_port	packet.h	/^	char *host_port;	\/\/ex : 117.26.4.32:7656 or domain$/;"	m	struct:sipuri_struct
+init_message_hddr	h_fields.c	/^int init_message_hddr(PACKET *packet, unsigned int count, ...)$/;"	f
+init_packet	h_fields.c	/^int init_packet(PACKET **packet)$/;"	f
+init_startline	h_fields.c	/^int init_startline(PACKET *packet, int (*fun_ptr)(STRTLINE *startline_ref))$/;"	f
+initiate_call	initiate_call.c	/^int initiate_call(void)$/;"	f
+maddr	packet.h	/^	char *maddr;$/;"	m	struct:viaparams_struct
+main	sipclient.c	/^int main(int argc, char argv[])$/;"	f
+max_forward	h_fields.c	/^int max_forward(MSGHDR *messageheader_ref)$/;"	f
+max_forwards	packet.h	/^	char *max_forwards;$/;"	m	struct:messageheader_struct
+messageheader_struct	packet.h	/^typedef struct messageheader_struct {$/;"	s
+method_name	packet.h	/^	char *method_name;$/;"	m	struct:cseq_struct
+method_name	packet.h	/^	char *method_name;$/;"	m	struct:requestline_struct
+msg_body	packet.h	/^	struct messagebody_struct *msg_body;$/;"	m	struct:packet_struct	typeref:struct:packet_struct::messagebody_struct
+msg_hddr	packet.h	/^	struct messageheader_struct *msg_hddr;$/;"	m	struct:packet_struct	typeref:struct:packet_struct::messageheader_struct
+name_addr	packet.h	/^	struct nameaddr_struct *name_addr;$/;"	m	struct:contactparam_struct	typeref:struct:contactparam_struct::nameaddr_struct
+name_addr	packet.h	/^	struct nameaddr_struct *name_addr;$/;"	m	struct:from_struct	typeref:struct:from_struct::nameaddr_struct
+name_addr	packet.h	/^	struct nameaddr_struct *name_addr;$/;"	m	struct:to_struct	typeref:struct:to_struct::nameaddr_struct
+nameaddr_struct	packet.h	/^typedef struct nameaddr_struct {$/;"	s
+packet_struct	packet.h	/^typedef struct packet_struct {$/;"	s
+port	packet.h	/^	char *port;$/;"	m	struct:sentby_struct
+protocol_name	packet.h	/^	char *protocol_name;$/;"	m	struct:sentprotocol_struct
+protocol_version	packet.h	/^	char *protocol_version;$/;"	m	struct:sentprotocol_struct
+received	packet.h	/^	char *received;$/;"	m	struct:viaparams_struct
+req_line	packet.h	/^	struct requestline_struct *req_line;$/;"	m	union:startline_union	typeref:struct:startline_union::requestline_struct
+request_line	h_fields.c	/^int request_line(STRTLINE *startline_ref)$/;"	f
+request_uri	packet.h	/^	union requesturi_union *request_uri;$/;"	m	struct:requestline_struct	typeref:union:requestline_struct::requesturi_union
+requestline_struct	packet.h	/^typedef struct requestline_struct {$/;"	s
+requesturi_union	packet.h	/^typedef union requesturi_union {$/;"	u
+res_line	packet.h	/^	struct responseline_struct *res_line;$/;"	m	union:startline_union	typeref:struct:startline_union::responseline_struct
+response_line	h_fields.c	/^int response_line(STRTLINE *startline_ref)$/;"	f
+rport	packet.h	/^	char *rport;$/;"	m	struct:viaparams_struct
+sent_by	packet.h	/^	struct sentby_struct *sent_by;$/;"	m	struct:viaparam_struct	typeref:struct:viaparam_struct::sentby_struct
+sent_protocol	packet.h	/^	struct sentprotocol_struct *sent_protocol;$/;"	m	struct:viaparam_struct	typeref:struct:viaparam_struct::sentprotocol_struct
+sentby_struct	packet.h	/^typedef struct sentby_struct {$/;"	s
+sentprotocol_struct	packet.h	/^typedef struct sentprotocol_struct {$/;"	s
+sip_uri	packet.h	/^	struct sipuri_struct *sip_uri;$/;"	m	union:requesturi_union	typeref:struct:requesturi_union::sipuri_struct
+sips_uri	packet.h	/^	struct sipsuri_struct *sips_uri;$/;"	m	union:requesturi_union	typeref:struct:requesturi_union::sipsuri_struct
+sipsuri_struct	packet.h	/^typedef struct sipsuri_struct {$/;"	s
+sipuri_struct	packet.h	/^typedef struct sipuri_struct {$/;"	s
+sread	setter_api.c	/^void sread(char *buffer, size_t buffer_size)$/;"	f
+start_line	packet.h	/^	union startline_union *start_line;$/;"	m	struct:packet_struct	typeref:union:packet_struct::startline_union
+startline_union	packet.h	/^typedef union startline_union {$/;"	u
+tag	packet.h	/^	char *tag;$/;"	m	struct:fromparams_struct
+tag	packet.h	/^	char *tag;$/;"	m	struct:toparams_struct
+to	h_fields.c	/^int to(MSGHDR *messageheader_ref)$/;"	f
+to	packet.h	/^	struct to_struct *to;$/;"	m	struct:messageheader_struct	typeref:struct:messageheader_struct::to_struct
+to_params	packet.h	/^	struct toparams_struct *to_params;$/;"	m	struct:to_struct	typeref:struct:to_struct::toparams_struct
+to_struct	packet.h	/^typedef struct to_struct {$/;"	s
+toparams_struct	packet.h	/^typedef struct toparams_struct {$/;"	s
+transport	packet.h	/^	char *transport;$/;"	m	struct:sentprotocol_struct
+ttl	packet.h	/^	char *ttl;$/;"	m	struct:viaparams_struct
+uri_param	packet.h	/^	char *uri_param;$/;"	m	struct:addrspec_struct
+user_agent	h_fields.c	/^int user_agent(MSGHDR *messageheader_ref)$/;"	f
+user_agent	packet.h	/^	char *user_agent;$/;"	m	struct:messageheader_struct
+user_info	packet.h	/^	char *user_info;$/;"	m	struct:addrspec_struct
+user_info	packet.h	/^	char *user_info;$/;"	m	struct:sipuri_struct
+version	packet.h	/^	char *version;$/;"	m	struct:requestline_struct
+via	h_fields.c	/^int via(MSGHDR *messageheader_ref)$/;"	f
+via	packet.h	/^	struct via_struct *via;$/;"	m	struct:messageheader_struct	typeref:struct:messageheader_struct::via_struct
+via_param	packet.h	/^	struct viaparam_struct *via_param;$/;"	m	struct:via_struct	typeref:struct:via_struct::viaparam_struct
+via_params	packet.h	/^	struct viaparams_struct *via_params;$/;"	m	struct:viaparam_struct	typeref:struct:viaparam_struct::viaparams_struct
+via_struct	packet.h	/^typedef struct via_struct {$/;"	s
+viaparam_struct	packet.h	/^typedef struct viaparam_struct {$/;"	s
+viaparams_struct	packet.h	/^typedef struct viaparams_struct {$/;"	s

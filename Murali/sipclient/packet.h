@@ -31,8 +31,8 @@ typedef union requesturi_union {
 /* Structure to maintain SipURI */
 
 typedef struct sipuri_struct {
-	char user_info[200];
-	char *host_port [200];	//ex : 117.26.4.32:7656 or domain
+	char *user_info;
+	char *host_port;	//ex : 117.26.4.32:7656 or domain
 	//char *uri_param;
 } SIPURI;
 
@@ -67,85 +67,85 @@ typedef struct callid_struct {
 
 /* Structure to maintain the contact */
 
-struct contact_struct {
+typedef struct contact_struct {
 	struct contactparam_struct *cont_param;
-}CONTACT;
+} CONTACT;
 
-struct contactparam_struct {
+typedef struct contactparam_struct {
 	struct nameaddr_struct *name_addr;
 	struct contactparams_struct *cont_params;
 	//struct contactparams_struct *next;
-}CONTACTPARAM;
+} CONTACTPARAM;
 
-struct nameaddr_struct {
+typedef struct nameaddr_struct {
 	char *display_name;
 	struct addrspec_struct *addr_spec;
-}NAMEADDR;
+} NAMEADDR;
 
-struct addrspec_struct {
+typedef struct addrspec_struct {
 	char *user_info;
 	char *host_part;
 	char *uri_param;
-}ADDRSPEC;
+} ADDRSPEC;
 
-struct contactparams_struct {
+typedef struct contactparams_struct {
 	char *expires;
 }CONTACTPARAMS;
 
 /*    Cseq */
 
-struct cseq_struct {
+typedef struct cseq_struct {
 	char *cseq_no;
 	char *method_name;
 }CSEQ;
 
 /* From */
 
-struct from_struct {
+typedef struct from_struct {
 	struct nameaddr_struct *name_addr;
 	struct fromparams_struct *from_params;
 }FROM;
 
-struct fromparams_struct {
+typedef struct fromparams_struct {
 	char *tag;
 }FROMPARAMS;
 
 /* To */
 
-struct to_struct {
+typedef struct to_struct {
 	struct nameaddr_struct *name_addr;
 	struct toparams_struct *to_params;
 }TO;
 
-struct toparams_struct {
+typedef struct toparams_struct {
 	char *tag;
 }TOPARAMS;
 
 
 /* Via */
 
-struct via_struct {
+typedef struct via_struct {
 	struct viaparam_struct *via_param;
 }VIA;
 
-struct viaparam_struct {
+typedef struct viaparam_struct {
 	struct sentprotocol_struct *sent_protocol;
 	struct sentby_struct *sent_by;
 	struct viaparams_struct *via_params;
 }VIAPARAM;
 
-struct sentprotocol_struct {
+typedef struct sentprotocol_struct {
 	char *protocol_name;
 	char *protocol_version;
 	char *transport;
 }SENTPROTOCOL;
 
-struct sentby_struct {
+typedef struct sentby_struct {
 	char *host;
 	char *port;
 }SENTBY;
 
-struct via_params {
+typedef struct viaparams_struct {
 	char *ttl;
 	char *branch;
 	char *maddr;
