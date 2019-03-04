@@ -8,7 +8,7 @@ int init_packet(PACKET **packet)
 
 int init_startline(PACKET *packet, int (*fun_ptr)(STRTLINE *startline_ref))
 {
-	STRTLINE *startline_ref;	
+	STRTLINE *startline_ref = NULL;	
 	startline_ref = (packet -> start_line = 
 							(STRTLINE *) alloc_memory (sizeof (STRTLINE))); 
 	fun_ptr(startline_ref);
@@ -17,9 +17,9 @@ int init_startline(PACKET *packet, int (*fun_ptr)(STRTLINE *startline_ref))
 /* start_line */
 int request_line(STRTLINE *startline_ref)
 {
-	REQLINE	*reqline_ref;
-	REQURI *requri_ref;
-	SIPURI *sipuri_ref;
+	REQLINE	*reqline_ref = NULL;
+	REQURI *requri_ref = NULL;
+	SIPURI *sipuri_ref = NULL;
 
 	reqline_ref  =  startline_ref -> req_line = 
 					(REQLINE *) alloc_memory (sizeof (REQLINE));
@@ -34,7 +34,12 @@ int request_line(STRTLINE *startline_ref)
 }
 
 int response_line(STRTLINE *startline_ref)
-{
+{	
+	RESLINE * resline_ref = NULL;
+
+	resline_ref = startline_ref -> res_line = 
+					(RESLINE *) alloc_memory (sizeof (RESLINE));
+			
 	return EXIT_SUCCESS;
 }
 
@@ -66,7 +71,7 @@ int accept( MSGHDR *messageheader_ref)
 
 int call_id(MSGHDR *messageheader_ref)
 {
-	CALLID *callid_ref;
+	CALLID *callid_ref = NULL;
 	callid_ref = messageheader_ref -> call_id =
 					(CALLID *) alloc_memory (sizeof (CALLID));
 	return EXIT_SUCCESS;
@@ -74,11 +79,11 @@ int call_id(MSGHDR *messageheader_ref)
 
 int contact(MSGHDR *messageheader_ref)
 {
-	CONTACT *contact_ref;
-	CONTACTPARAM *contactparam_ref;
- 	CONTACTPARAMS *contactparams_ref;
- 	NAMEADDR *nameaddr_ref;
- 	ADDRSPEC *addrspec_ref;
+	CONTACT *contact_ref = NULL;
+	CONTACTPARAM *contactparam_ref = NULL;
+ 	CONTACTPARAMS *contactparams_ref = NULL;
+ 	NAMEADDR *nameaddr_ref = NULL;
+ 	ADDRSPEC *addrspec_ref = NULL;
 	
 	contact_ref = messageheader_ref -> contact =
 					(CONTACT *) alloc_memory (sizeof (CONTACT));  
@@ -107,7 +112,7 @@ int content_type(MSGHDR *messageheader_ref)
 
 int cseq(MSGHDR *messageheader_ref)
 {
-	CSEQ *cseq_ref;
+	CSEQ *cseq_ref = NULL;
 	cseq_ref = messageheader_ref -> cseq = 
 					(CSEQ*) alloc_memory (sizeof (CSEQ));
 	cseq_ref -> cseq_no = "234";
@@ -117,8 +122,8 @@ int cseq(MSGHDR *messageheader_ref)
 
 int from(MSGHDR *messageheader_ref)
 {
-	FROM *from_ref;
- 	FROMPARAMS *fromparams_ref;
+	FROM *from_ref = NULL;
+ 	FROMPARAMS *fromparams_ref = NULL;
 	from_ref = messageheader_ref -> from = 
 					(FROM *) alloc_memory (sizeof (FROM));
 	fromparams_ref = from_ref -> from_params =
@@ -133,8 +138,8 @@ int max_forward(MSGHDR *messageheader_ref)
 
 int to(MSGHDR *messageheader_ref)
 {
-	TO *to_ref;
-	TOPARAMS *toparams_ref;
+	TO *to_ref =  NULL;
+	TOPARAMS *toparams_ref = NULL;
 	
 	to_ref = messageheader_ref -> to = 
 							(TO *) alloc_memory (sizeof (TO));
@@ -151,11 +156,11 @@ int user_agent(MSGHDR *messageheader_ref)
 
 int via(MSGHDR *messageheader_ref)
 {
-	VIA *via_ref;
-	VIAPARAM *viaparam_ref;
-	SENTPROTOCOL *sentprotocol_ref;
- 	SENTBY *sentby_ref;
- 	VIAPARAMS *viaparams_ref;
+	VIA *via_ref = NULL;
+	VIAPARAM *viaparam_ref = NULL;
+	SENTPROTOCOL *sentprotocol_ref = NULL;
+ 	SENTBY *sentby_ref = NULL;
+ 	VIAPARAMS *viaparams_ref = NULL;
 
 	via_ref = messageheader_ref -> via = 
 					(VIA *) alloc_memory (sizeof (VIA));

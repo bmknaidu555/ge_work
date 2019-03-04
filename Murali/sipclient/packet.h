@@ -6,7 +6,6 @@ typedef struct packet_struct {
 	struct messagebody_struct *msg_body;
 } PACKET;
 	
-
 /* structure for startline */
 
 typedef union startline_union {
@@ -21,6 +20,14 @@ typedef struct requestline_struct {
 	union requesturi_union *request_uri;
 	char *version;
 } REQLINE;
+
+/* structure for response line */
+
+typedef struct responseline_struct {
+	char *version;
+	char *status_code;
+	char *response_phrase;	
+} RESLINE;
 
 /* Union for request URI */
 
