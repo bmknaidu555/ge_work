@@ -5,10 +5,10 @@ int main(int argc, char argv[])
 	/* Function Pointer to call the respected modules */
 	int (*caller)(void);
 	/* Initializing buffer with modules */
-	void *modules[] = {initiate_call};
+	void *modules[] = {initiate_call, config_cui};
 	char choice;
 	
-	printf("1.Call\n2.exit\n");
+	printf("1.CALL\n2.VIEW CONFIGURATION\n2.EXIT\n");
 	choice = fgetc(stdin);
 	caller = modules[choice - 49];	
 	

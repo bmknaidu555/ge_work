@@ -36,10 +36,13 @@ int to(MSGHDR *messageheader_ref);
 int user_agent(MSGHDR *messageheader_ref);
 int via(MSGHDR *messageheader_ref);
 
+
 /* API to allocate memory */
 /* The below API use */
 
 void *alloc_memory(size_t size);
+int config_cui(void);
+
 void dumplog(const char* message, const char* fun_name, 
 					const char* file_name, const int line_no);
 
