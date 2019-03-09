@@ -1,14 +1,25 @@
 #include "header.h"
-void sread(char *buffer, size_t buffer_size)
+
+/* Reading the input string and replacing the \n */ 
+char* fsread(char *buffer, size_t buffer_size, FILE *ptr)
 {
-	int i = 0;
-	
+	unsigned int i = 0;
+
 	__fpurge(stdin);
-	fgets (buffer, buffer_size, stdin);
-	while (buffer[i] != '\0')
-		i++;
-	buffer[i] = '\0';
+	//if(fgets (buffer, buffer_size, ptr) == NULL)
+	//	return NULL;
+	
+	while (buffer[i] != '\0') {
+		if(buffer[i] == ' ') {	
+			buffer[i] = '\0';
+		}
+	}
 }
 
-//int setsip_uri()
+void iread()
+{
+	__fpurge(stdin);
+	
+}
+
 
